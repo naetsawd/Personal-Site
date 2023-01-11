@@ -1,6 +1,6 @@
 # QuickBid
 ## Introduction
-QuickBid is a simple auction site I worked on in an effort to learn how to use the Django framework and CSS. This post will cover learning outcomes from this project as well as features of the website minus obvious features such as categories, log in & register.
+QuickBid is a simple auction site I worked on in an effort to learn how to use the Django framework and learn base level styling with CSS. This post will cover learning outcomes from this project as well as features of the website minus obvious features such as categories, log in & register.
 
 ## Learning Outcomes
 * Simple arrangement and styling of elements using CSS 
