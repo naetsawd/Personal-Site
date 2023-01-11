@@ -5,9 +5,7 @@
     <h2>{{ listing.title }}</h2>
     <strong>Seller:</strong> {{ listing.user }}
     <br>
-    {% if not active %}
-        This lisiting is closed.
-    {% endif %}
+    {% if not active %}This lisiting is closed.{% endif %}
     {% if winner %} You were the highest bidder! {% endif %}
     <div id="grid" style="margin-top: 10px;">
     <div>
@@ -15,6 +13,21 @@
         <li>Current Bid: ${{ listing.price }}</li>
         <li>Category: {{ listing.category }}</li>
     </div>
+    {% if not active %}
+    {% if not seller %}
+    {% if watching == True %}
+    <div style="text-align: left; width: 250px;">
+        <table>
+        <form action="" method="POST">
+        	{% csrf_token %}
+            <input class="btn btn-secondary" type="submit" name="btnform3" value="Remove from Watchlist" style="margin-top: 10px;">
+        </form>
+        </table>
+    </div>
+    {% endif %}
+    {% endif %}
+    {% endif %}
+
     {% if user.is_authenticated %}
     {% if active %}
     {% if not seller %}
