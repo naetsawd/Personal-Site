@@ -34,15 +34,16 @@ function navHighlighter() {
     //
     var sectionTop = (current.getBoundingClientRect().top + window.pageYOffset) - 400;
     sectionId = current.getAttribute("id");
+
+    // if (current.getAttribute("id") == "skills" || current.getAttribute("id") == "links") {
+    //   sectionTop = (current.getBoundingClientRect().top + window.pageYOffset) - 500;
+    // }
     
     /*
     - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
     - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
     */
-    if (
-      scrollY > sectionTop &&
-      scrollY <= sectionTop + sectionHeight
-    ){
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document.querySelector(".navbar_container a[href*=" + sectionId + "]").classList.add("highlight");
     } else {
       document.querySelector(".navbar_container a[href*=" + sectionId + "]").classList.remove("highlight");
