@@ -1,6 +1,6 @@
 # 2048 Game
 ## Summary
-As part of a Software Development class, I completed a project that involved creating a 2048 game using the Java programming language. In addition to coding the game itself, I also created several key deliverables, including a Module Interface Specification, UML Class diagram, Control Flow Chart, and JUnit tests.
+As part of a Software Development class, I completed a project that involved creating the 2048 game using Java. In addition to coding the game itself, I also learned several key concepts such as the Module Interface Specification, UML Class diagram, Control Flow Chart, and JUnit tests.
 
 The 2048 game features both manual and automatic demos. The manual demo allows users to progress until they reach the number 8, using directional input in the form of up, down, left, or right. The automatic demo progresses through the game until it reaches the number 128, by cycling through the directions randomly.
 
