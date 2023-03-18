@@ -12,7 +12,7 @@
     <nav class="navbar">
         <div class="navbar_container">
             <a href="#home" id="navbar_logo">Dechsit Naetsawan</a>
-            <div class="navbar_toggle" id="mobile-menu">
+            <div class="navbar_toggle" id="mobile_menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -36,22 +36,30 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class = "bg">
-        <div class="hero_container">
-            <h1 class="hero_heading">Welcome to my site!</h1>
+        <div class="hero_heading">
+            <h1 id="hero1">Hi there,</h1>
+            <h1 id="hero2">I'm Dechsit,</h1>
+            <h1 id="hero3">Welcome to my site!</h1>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="main" id="about">
-        <div class="main_container">
-            <div class="main_img_container">
-                <div class="main_img_card">ICON</div>
+    <section class="about" id="about">
+        <div class="about_container">
+            <div class="about_img_container">
+                <div class="about_img_card">ICON</div>
             </div>
-            <div class="main_content">
+            <div class="about_content">
                 <h1>About Me</h1>
-                <h2>Placeholder</h2>
-                <p>Placeholder</p>
+                <p>
+                    Hi, my name is Dechsit Naetsawan and I am fourth-year undergraduate student at McMaster University. 
+                    I am pursuing a double major in Mathematics and Computer Science and am set to graduate in May of 2023.
+                </p>    
+                <p>
+                    As a motivated and enthusiastic individual, I am seeking opportunities to gain hands-on experience in the field of computer science. 
+                    Although I am aware that I still have much to learn, I am confident that I can contribute to any project or team I am assigned to. 
+                    I am dedicated to working hard and becoming a valuable member of any organization, while also fostering positive relationships with my colleagues.
+                </p>
             </div>
         </div>
     </section>
@@ -60,31 +68,50 @@
     <section class="projects" id="projects">
         <h1>Projects</h1>
         <div class="projects_wrapper">
-            <div class="projects_card">
-                <h2>P1</h2>
-                <p>Placeholder Description</p>
-                <div class="projects_btn"><button>View</button></div>
-            </div>
-            <div class="projects_card">
-                <h2>P2</h2>
-                <p>Placeholder Description</p>
-                <div class="projects_btn"><button>View</button></div>
-            </div>
-            <div class="projects_card">
-                <h2>P3</h2>
-                <p>Placeholder Description</p>
-                <div class="projects_btn"><button>View</button></div>
-            </div>
+            <a class="projects_card" href="https://github.com/naetsawd/Personal-Projects/tree/main/2048%20Game" target="_blank">
+                <h2>2048 Game</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png">
+                <div class= "projects_desc">
+                    <p>
+                        In order to show our understanding of object-oriented programming concepts as well as the software design 
+                        process we were individually tasked with recreating the popular 2048 game with a text based GUI using Java.
+                    </p>
+                    <div class= "devstack">
+                        <p>Click on the card to read more <br> (Redirects to GitHub) <br><br> Used: Java</p>
+                    </div>
+                </div>
+            </a>
+            <a class="projects_card" href="https://github.com/naetsawd/Personal-Projects/tree/main/QuickBid" target="_blank">
+                <h2>QuickBid</h2>
+                <div class= "projects_desc">
+                    <p>
+                        QuickBid is a simple auction site I worked on in an effort to learn how to use the Django framework and 
+                        learn basic styling with CSS.
+                    </p>
+                    <div class= "devstack">
+                        <p>Click on the card to read more <br> (Redirects to GitHub) <br><br> Used: Python, Django, Html & CSS</p>
+                    </div>
+                </div>
+            </a>
+            <a class="projects_card">
+                <h2>Upcoming Project</h2>
+                <div class= "projects_desc">
+                    <p>This card will be populated once a new project is completed.</p>
+                    <div class= "devstack">
+                        <!-- <p>Click on the card to read more <br> (Redirects to GitHub) <br><br> Used: Python, Django, Html & CSS</p> -->
+                    </div>
+                </div>
+            </a>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
-        <div class="main_container">
-            <div class="main_img_container">
-                <div class="main_img_card">ICON</div>
+        <div class="about_container">
+            <div class="about_img_container">
+                <div class="about_img_card">ICON</div>
             </div>
-            <div class="main_content">
+            <div class="about_content">
                 <h1>Skills</h1>
                 <h2>Placeholder</h2>
                 <p>Placeholder</p>
@@ -93,7 +120,7 @@
     </section>
 
     <!-- Footer Section -->
-    <!-- Credit to https://www.iconfinder.com/search?q=document for icons -->
+    <!-- Credits to https://www.iconfinder.com/ for icons -->
     <section class="footer_container" id="links">
         <h1>Links</h1>
         <div class="footer_links">
@@ -112,6 +139,7 @@
                 </div>
             </div>
         </div>
+        <h2>By</h2>
     </section>
 
     <script src="app.js"></script>
