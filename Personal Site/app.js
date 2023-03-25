@@ -39,7 +39,7 @@ function navHighlighter() {
   });
 }
 
-window.onload = navHighlighter;
+  window.onload = navHighlighter;
 
 //Hide project card that is not hovered on
 const cards = document.querySelectorAll('.projects_card');
