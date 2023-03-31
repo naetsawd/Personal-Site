@@ -1,0 +1,21 @@
+/* Credits to https://uigradients.com/ for gradients */
+/* Credits to https://wallpaperaccess.com/pixel-art-gif for background gif */
+@import "navbar.css";
+@import "hero.css";
+@import "about.css";
+@import "projects.css";
+@import "skills.css";
+@import "footer.css";
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.highlight {
+    border-bottom: 4px solid rgb(132, 0, 255);
+}

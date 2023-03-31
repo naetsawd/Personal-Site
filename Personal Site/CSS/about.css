@@ -1,0 +1,122 @@
+/* About Section */
+.about {
+    background-color: #131313;
+    padding: 8rem 0;
+}
+
+.about_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 25px;
+}
+
+.about_content {
+    color: #fff;
+    width: 100%;
+}
+
+.about_content h1 {
+    font-size: 4rem;
+    background-color: #db0235;
+    background-image: linear-gradient(135deg, #db0235 10%, #ff1e87 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+
+.about_content p {
+    text-indent: 25px;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.about_img_container {
+    text-align: center;
+}
+
+.about_img_card {
+    margin: 10px;
+    height: 500px;
+    width: 500px;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(135deg, #00dbde 10%, #fc00ff 100%);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 1100px) {
+    .about {
+        padding-bottom: 2rem;
+    }
+
+    .about_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+
+    .about_img_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about_img_card {
+        height: 425px;
+        width: 425px;
+    }
+
+    .about_content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .about_content h1 {
+        margin-top: 2rem;
+    }
+
+    .about_content p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        padding-bottom: 0rem;
+    }
+    
+    .about_img_card {
+        height: 350px;
+        width: 350px;
+    }
+
+    .about_content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .about_content h1 {
+        margin-top: 3rem;
+    }
+
+    .about_content p {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+}

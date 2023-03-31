@@ -1,0 +1,106 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(to top, rgba(19, 19, 19, 0) 60%, rgba(19, 19, 19)) fixed
+                , linear-gradient(to bottom, rgba(19, 19, 19, 0) 25%, rgb(19, 19, 19))
+                , url(../Images/hero.gif) no-repeat center center fixed;
+    padding: 350px 0px;
+    text-align: left;
+}
+
+.hero_heading {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: -280px 0 0 50px;
+    text-align: left;
+}
+
+.hero_heading h1 {
+    font-family: 'VT323', monospace;
+    font-size: 120px;
+    color: #fff;
+    margin: -25px;
+    white-space: nowrap;
+    overflow: hidden;
+}   
+
+/* Credits to https://codepen.io/Marty-Development/pen/xxwBJqO for multi-line typewriter effect */
+#hero1 {
+    border-right: 2px solid rgba(17, 17, 17, 0);
+    animation: animated-text_1 1s steps(30, end) 1s 1 normal both,
+    animated-cursor 900ms steps(30, end) 4;
+}
+
+#hero2 {
+    border-right: 2px solid rgba(17, 17, 17, 0);
+    animation: animated-text_2 1s steps(30, end) 1s 1 normal both,
+    animated-cursor 900ms steps(30, end) 3;
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+}
+
+#hero3 {
+    border-right: 2px solid rgba(17, 17, 17, 0);
+    animation: animated-text_3 1s steps(30, end) 1s 1 normal both,
+    animated-cursor 900ms steps(30, end) infinite;
+    -webkit-animation-delay: 6.5s;
+    animation-delay: 6.5s;
+}
+
+@keyframes animated-cursor {
+    from {
+      border-right-color: rgba(17, 17, 17, 0);
+    }
+    to {
+      border-right-color: rgba(255, 255, 255, 0.8);
+    }
+}
+  
+  @keyframes animated-text_1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 9ch;
+    }
+}
+  
+  @keyframes animated-text_2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 12ch;
+    }
+}
+
+  @keyframes animated-text_3 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 18.5ch;
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 940px) {
+    .hero_heading h1{
+        font-size: 90px;
+        margin: -10px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .hero_heading h1{
+        font-size: 60px;
+        margin: -12px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .hero_heading h1{
+        font-size: 52px;
+        margin: -10px;
+    }
+}
