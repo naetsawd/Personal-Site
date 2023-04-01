@@ -1,7 +1,7 @@
 /* Links Section */
 .links_container {
     background-color: #000000;
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,8 +24,12 @@
 .links_wrapper {
     width: 100%;
     max-width: 1000px;
-    justify-content: center;
     display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90%;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -40,11 +44,11 @@
     text-decoration: none;
     padding-bottom: 6px;
     transition: all 0.2s ease;
-    border-bottom: 4px solid #000000;
+    border-bottom: 3px solid #000000;
 }
 
 .links_item a:hover {
-    border-bottom: 4px solid rgb(132, 0, 255);
+    border-bottom: 3px solid rgb(132, 0, 255);
     transition: all 0.2s ease;
 }
 
@@ -57,14 +61,26 @@
 /* Mobile Responsive */
 @media screen and (max-width: 1015px) {
     .links_wrapper {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+    .links_item {
+        margin: 15px;
+    }
+
+    .links_item a {
+        font-size: 25px;
+    }
+    
+    .links_item img{
+        height:40px;
+        width:40px;
     }
 }
 
 @media screen and (max-width: 720px) {
-    .links_wrapper {
-        grid-template-columns: repeat(2, 1fr);
-    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -84,11 +100,51 @@
 }
 
 .credits_container h1 {
-    font-size: 18px;
+    font-size: 3rem;
     background-color: #db0235;
     background-image: linear-gradient(135deg, #db0235 10%, #ff1e87 100%);
+    background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.credits_container a {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-bottom: 2px solid #131313;
+}
+
+.credits_container a:hover {
+    border-bottom: 2px solid rgb(132, 0, 255);
+    transition: all 0.2s ease;
+}
+
+.credits_container h2 {
+    font-size: 18px;
+    background-color: #1d976c;
+    background: linear-gradient(135deg, #1d976c, #93f9b9);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 960px) {
+    .links_container {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .credits_container h1 {
+        font-size: 16px;
+    }
 }

@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 650px) {
     .skills_list {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -81,5 +81,20 @@
 @media screen and (max-width: 520px) {
     .skills_container h1 {
         font-size: 45px;
+    }
+
+    .skills_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .iconify {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .skills_container h1 {
+        font-size: 40px;
     }
 }
