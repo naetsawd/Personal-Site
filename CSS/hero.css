@@ -9,8 +9,7 @@
 }
 
 .hero_heading {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     max-width: 1000px;
     margin: -280px 0 0 50px;
     text-align: left;
@@ -20,9 +19,9 @@
     font-family: 'VT323', monospace;
     font-size: 120px;
     color: #fff;
-    margin: -25px;
     white-space: nowrap;
     overflow: hidden;
+    font-weight: 500;
 }   
 
 /* Credits to https://codepen.io/Marty-Development/pen/xxwBJqO for multi-line typewriter effect */
@@ -44,8 +43,8 @@
     border-right: 2px solid rgba(17, 17, 17, 0);
     animation: animated-text_3 1s steps(30, end) 1s 1 normal both,
     animated-cursor 900ms steps(30, end) infinite;
-    -webkit-animation-delay: 5.5s;
-    animation-delay: 5.5s;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
 }
 
 @keyframes animated-cursor {
@@ -80,7 +79,7 @@
       width: 0;
     }
     to {
-      width: 18.5ch;
+      width: 19ch;
     }
 }
 
@@ -88,27 +87,23 @@
 @media screen and (max-width: 940px) {
     .hero_heading h1{
         font-size: 90px;
-        margin: -10px;
     }
 }
 
 @media screen and (max-width: 720px) {
     .hero_heading h1{
         font-size: 60px;
-        margin: -12px;
     }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 510px) {
     .hero_heading h1{
         font-size: 52px;
-        margin: -10px;
     }
 }
 
 @media screen and (max-width: 440px) {
   .hero_heading h1{
       font-size: 42px;
-      margin: -10px;
   }
 }
