@@ -3,6 +3,9 @@ const menuLinks = document.querySelector('.navbar_menu')
 const navLogo = document.querySelector('#navbar_logo')
 const sections = document.querySelectorAll("section[id]");
 
+//Remove div ID from URL
+window.addEventListener("hashchange", () => window.history.pushState({}, "", '/'), {});
+
 //Display Mobile Menu
 const mobileMenu = () => {
     menu.classList.toggle('is_active')

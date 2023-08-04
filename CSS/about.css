@@ -36,7 +36,7 @@
 .about_content p {
     text-indent: 25px;
     margin-bottom: 1rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -95,7 +95,6 @@
     }
 
     .about_content {
-        text-align: center;
         margin-bottom: 4rem;
     }
 
@@ -104,7 +103,7 @@
     }
 
     .about_content p {
-        margin-top: 1rem;
+        margin-top: 0.75rem;
     }
 }
 
@@ -124,7 +123,6 @@
     }
 
     .about_content {
-        text-align: center;
         margin-bottom: 4rem;
     }
 
@@ -134,13 +132,13 @@
 
     .about_content p {
         margin-top: 2rem;
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 }
 
 @media screen and (max-width: 440px) {
     .about_content p {
         margin-top: 2rem;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 }
