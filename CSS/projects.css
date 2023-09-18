@@ -64,6 +64,11 @@
     background-image: linear-gradient(135deg, #f690af 10%, #f6e05f 100%);
 }
 
+.projects_card:nth-child(4) {
+    /* background: linear-gradient(to left, #00ff95, #27b87b); */
+    background-image: linear-gradient(135deg, #9cecfb 10%, #0052d4 100%);
+}
+
 .dim_cards {
     opacity: 0.5;
 }
@@ -78,7 +83,7 @@
 
 .projects_card img {
     width: 500px;
-    height: 300px;
+    height: 290px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
