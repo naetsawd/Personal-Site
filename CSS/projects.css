@@ -146,7 +146,7 @@
 
     .projects_card img {
         width: 370px;
-        height: 170px;
+        height: 180px;
     }
 
     .projects_desc p {
@@ -160,13 +160,20 @@
 
 @media screen and (max-width: 460px) {
     .projects_card {
-        height: 200px;
+        height: 220px;
         width: 355px;
+        padding: 0px;
+        justify-content: flex-start;
+    }
+
+    .projects_card h2 {
+        font-size: 25px;
+        margin-top: -10px;
     }
 
     .projects_card img {
-        width: 370px;
-        height: 170px;
+        width: 250px;
+        height: 160px;
     }
 
     .projects_desc p {
