@@ -161,7 +161,7 @@
 @media screen and (max-width: 460px) {
     .projects_card {
         height: 220px;
-        width: 355px;
+        width: 325px;
         padding: 0px;
         justify-content: flex-start;
     }
